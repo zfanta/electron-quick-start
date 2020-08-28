@@ -4,7 +4,8 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "webpack-dev-server": "webpack-dev-server --mode development --hot"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,7 +18,11 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^10.1.0"
+    "electron": "^10.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "sequelize": "^6.3.4",
